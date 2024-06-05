@@ -86,13 +86,13 @@ $json = json_encode($values,JSON_UNESCAPED_UNICODE);
             <?php foreach($values as $v){ ?>
                 <tr>
                   <td class='border-t-2 border-gray-200 px-4 py-3'><a href="detail.php?id=<?=$v["id"]?>" class="text-sky-500 underline decoration-sky-500 hover:no-underline"><?=$v["indate"]?></a></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["name"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q1"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q2"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q3"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q4"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q5"]?></td>
-                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=$v["q6"]?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["name"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q1"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q2"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q3"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q4"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q5"])?></td>
+                  <td class='border-t-2 border-gray-200 px-4 py-3'><?=h($v["q6"])?></td>
                 </tr>
             <?php } ?>
         </table>

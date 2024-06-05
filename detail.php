@@ -74,8 +74,8 @@ $row = $stmt -> fetch();
       <!-- ニックネーム -->
       <div class="sm:col-span-2">
         <label for="name" class="mb-2 inline-block text-sm sm:text-base">ニックネーム ※変更できません</label>
-        <input name="name" value="<?= $row["name"] ?>" class="w-full rounded border px-3 py-3 outline-none" disabled />
-        <input name="name" type="hidden" value="<?= $row["name"] ?>">
+        <input name="name" value="<?= h($row["name"]) ?>" class="w-full rounded border px-3 py-3 outline-none" disabled />
+        <input name="name" type="hidden" value="<?= h($row["name"]) ?>">
       </div>
 
       <!-- クレド -->
@@ -113,19 +113,19 @@ $row = $stmt -> fetch();
       <!-- 改善 -->
       <div class="sm:col-span-2">
         <label for="improvement" class="mb-2 inline-block text-sm sm:text-base">昨日のあなたより、今日のあなたができるようになったことはなんですか？</label>
-        <textarea name="improvement" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= $row["q3"] ?></textarea>
+        <textarea name="improvement" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= h($row["q3"]) ?></textarea>
       </div>
   
       <!-- ありがとう -->
       <div class="sm:col-span-2">
         <label for="thanks" class="mb-2 inline-block text-sm sm:text-base">周りの人に感謝することや、良かった点を教えてください。</label>
-        <textarea name="thanks" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= $row["q4"] ?></textarea>
+        <textarea name="thanks" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= h($row["q4"]) ?></textarea>
       </div>
 
       <!-- 取り組み -->
       <div class="sm:col-span-2">
         <label for="message" class="mb-2 inline-block text-sm sm:text-base">明日の目標はなんですか？</label>
-        <textarea name="message" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= $row["q5"] ?></textarea>
+        <textarea name="message" class="w-full rounded border bg-sky-50 px-3 py-2 outline-none ring-sky-300 transition duration-100 focus:ring" required><?= h($row["q5"]) ?></textarea>
       </div>
 
       <!-- コスモ -->

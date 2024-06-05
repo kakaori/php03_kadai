@@ -78,7 +78,7 @@ if($status==false){
   <div class="mx-auto max-w-screen-md px-4 md:px-8">
     <p class="mb-4 text-center text-xl text-sky-500 font-bold md:mb-6 lg:text-xl">LAB17 GEEK日記</p>
     <h2 class="mb-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">送信が完了しました</h2>
-    <span class="block text-sm text-gray-500">回答日時：<?php echo $date?></span>
+    <span class="block text-sm text-gray-500">回答日時：<?php echo $date ?></span>
 
     <div class="divide-y">
       <!-- review - start -->
@@ -86,7 +86,7 @@ if($status==false){
         <div>
           <span class="block text-sm font-bold">ニックネーム</span>
         </div>
-        <p class="text-gray-600"><?php echo $name?></p>
+        <p class="text-gray-600"><?php echo h($name) ?></p>
       </div>
       <!-- review - end -->
 
@@ -96,7 +96,7 @@ if($status==false){
           <span class="block text-sm font-bold">CREDOに則り、自らのチカラでセカイを変えようとする全ての挑戦を讃えましたか？</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $credo?></p>
+        <p class="text-gray-600"><?php echo $credo ?></p>
       </div>
       <!-- review - end -->
 
@@ -106,7 +106,7 @@ if($status==false){
           <span class="block text-sm font-bold">コミュニティの活性化に自ら貢献しましたか？</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $community?></p>
+        <p class="text-gray-600"><?php echo $community ?></p>
       </div>
       <!-- review - end -->
 
@@ -116,7 +116,7 @@ if($status==false){
           <span class="block text-sm font-bold">昨日のあなたより、今日のあなたができるようになったことはなんですか？</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $improvement?></p>
+        <p class="text-gray-600"><?php echo h($improvement) ?></p>
       </div>
       <!-- review - end -->
 
@@ -126,7 +126,7 @@ if($status==false){
           <span class="block text-sm font-bold">周りの人に感謝することや、良かった点を教えてください。</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $thanks?></p>
+        <p class="text-gray-600"><?php echo h($thanks) ?></p>
       </div>
       <!-- review - end -->
 
@@ -135,7 +135,7 @@ if($status==false){
         <div>
           <span class="block text-sm font-bold">明日の目標はなんですか？</span>
         </div>
-        <p class="text-gray-600"><?php echo $message?></p>
+        <p class="text-gray-600"><?php echo h($message) ?></p>
       </div>
       <!-- review - end -->
 

@@ -86,7 +86,7 @@ if($status==false){
         <div>
           <span class="block text-sm font-bold">ニックネーム</span>
         </div>
-        <p class="text-gray-600"><?php echo $name?></p>
+        <p class="text-gray-600"><?php echo h($name)?></p>
       </div>
       <!-- review - end -->
 
@@ -116,7 +116,7 @@ if($status==false){
           <span class="block text-sm font-bold">昨日のあなたより、今日のあなたができるようになったことはなんですか？</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $improvement?></p>
+        <p class="text-gray-600"><?php echo h($improvement)?></p>
       </div>
       <!-- review - end -->
 
@@ -126,7 +126,7 @@ if($status==false){
           <span class="block text-sm font-bold">周りの人に感謝することや、良かった点を教えてください。</span>
         </div>
 
-        <p class="text-gray-600"><?php echo $thanks?></p>
+        <p class="text-gray-600"><?php echo h($thanks)?></p>
       </div>
       <!-- review - end -->
 
@@ -135,7 +135,7 @@ if($status==false){
         <div>
           <span class="block text-sm font-bold">明日の目標はなんですか？</span>
         </div>
-        <p class="text-gray-600"><?php echo $message?></p>
+        <p class="text-gray-600"><?php echo h($message)?></p>
       </div>
       <!-- review - end -->
 
