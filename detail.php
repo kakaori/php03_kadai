@@ -9,7 +9,7 @@ include("function.php");// function化
 $pdo = db_conn();
 
 //２．データ登録SQL作成
-$sql = "SELECT * FROM gs_table WHERE id=:id";
+$sql = "SELECT * FROM gs_table_old WHERE id=:id";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
 $status = $stmt->execute();

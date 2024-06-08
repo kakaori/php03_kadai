@@ -7,7 +7,7 @@ include("function.php");// function化
 $pdo = db_conn();
 
 //２．データ登録SQL作成
-$sql = "SELECT * FROM gs_table";
+$sql = "SELECT * FROM gs_table_old";
 $stmt = $pdo->prepare($sql);
 $status = $stmt->execute();
 

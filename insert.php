@@ -20,7 +20,7 @@ include("function.php");// function化
 $pdo = db_conn();
 
 //３．データ登録SQL作成
-$sql = "INSERT INTO gs_table(name,q1,q2,q3,q4,q5,q6,indate)VALUES(:name,:credo,:community,:improvement,:thanks,:message,:cosmos,sysdate())";
+$sql = "INSERT INTO gs_table_old(name,q1,q2,q3,q4,q5,q6,indate)VALUES(:name,:credo,:community,:improvement,:thanks,:message,:cosmos,sysdate())";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':credo',       $credo,       PDO::PARAM_STR);
